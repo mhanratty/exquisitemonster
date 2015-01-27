@@ -1,0 +1,156 @@
+/* css reset rule */
+*  {
+	margin: 0;
+	padding: 0;
+}
+
+html, body  {
+	height: 100%;
+}
+
+body  {
+	background-color: white;
+	color: #455a64;
+	font-size: 17px;
+	font-family:'Roboto', sans-serif;
+}
+
+p.instructions  {
+	font-family: 'Roboto Slab', serif;
+}
+
+
+/* Owl Carousel Styles----------------------------------------------------*/
+#fullpage {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.section  {
+	position: fixed;
+	top: 20px;
+	bottom: 72px;
+	left: 0;
+	right: 0;
+
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	background-color: white;
+	margin: 0 auto;				/* center container */
+	}
+
+.section > div {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+/* Footer Styles---------------------------------------------------*/
+
+.footer  {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 52px;
+	background-color: white;
+	text-align: center;
+}
+
+
+/* Carousel Items Styles---------------------------------------------------*/
+
+.owl-carousel .owl-wrapper-outer,
+.owl-carousel .owl-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.owl-carousel .owl-wrapper {
+	display: -webkit-flex !important;
+	display: flex !important;
+}
+
+.owl-carousel .owl-item {
+	float: none;
+}
+
+.owl-carousel .item {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	-webkit-display: flex;
+	display: -webkit-box;				 /* flex box - old syntax */
+	align-items: center; 				 /*vertically center text */
+	-webkit-align-items: center; 		 /*vertically center text */
+	-webkit-box-align: center;		     /*vertically center text -- old syntax*/
+	justify-content: center; 			 /*horizontal center slide content */
+	-webkit-justify-content: center; 	 /*horizontal center slide content */
+	-webkit-box-pack: center;			 /*horizontal center slide content -- old syntax */
+
+}
+
+.owl-carousel .item img {
+	display: block;
+	height: 184px;
+}
+
+
+.owl-carousel .item img[src=""] {
+   display: none;
+}
+
+.instructions  {
+	text-align: center; 
+}
+
+
+/* Button Styles---------------------------------------------------*/
+
+.button  {
+	background-color: #00BCD4;
+	height: 52px;
+	width: 100%;
+	text-align: center;
+	line-height: 52px;
+	margin: 0 auto;
+
+	font-weight: 500;
+	color: white;
+
+}
+
+.movebuttonUp  {
+	-webkit-transition: -webkit-transform .6s ease-in-out;
+	transition: transform .6s ease-in-out;
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+.movebuttonDown  {
+	-webkit-transition: -webkit-transform .6s ease-in-out;
+	transition: transform .6s ease-in-out;
+	-webkit-transform: translate(0px, 103px);
+	transform: translate(0px, 104px);
+}
+
+/* Lock Styles---------------------------------------------------*/
+
+.lock  {
+	pointer-events: none;
+}
+
+/* Span Styles---------------------------------------------------*/
+.emphasis  {
+	color: #FF4081
+}
